@@ -1,33 +1,4 @@
-/*
-=====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
-
-   TOC:
-   a. General Styles
-   b. Header Styles
-   c. About Section
-   d. Resume Section
-   e. Portfolio Section
-   f. Call To Action Section
-   g. Testimonials Section
-   h. Contact Section
-   i. Footer
-
-===================================================================== */
-
-/* ------------------------------------------------------------------ */
-/* a. General Styles
-/* ------------------------------------------------------------------ */
-
 body { background: #0f0f0f; }
-
-/* ------------------------------------------------------------------ */
-/* b. Header Styles
-/* ------------------------------------------------------------------ */
-
 header {
    position: relative;
    height: 800px;
@@ -40,7 +11,6 @@ header {
    overflow: hidden;
 }
 
-/* vertically center banner section */
 header:before {
    content: '';
    display: inline-block;
@@ -355,6 +325,16 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
+.javascript {
+  	width: 72%;
+  	-moz-animation: jquery 2s ease;
+  	-webkit-animation: jquery 2s ease;
+}
+.reactjs {
+  	width: 60%;
+  	-moz-animation: jquery 2s ease;
+  	-webkit-animation: jquery 2s ease;
+}
 
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
@@ -511,7 +491,6 @@ ul#nav li.current a { color: #F06000; }
 	filter:alpha(opacity=100);
 }
 
-/* popup modal */
 .popup-modal {
 	max-width: 550px;
 	background: #fff;
@@ -555,11 +534,6 @@ ul#nav li.current a { color: #F06000; }
 .popup-modal a:hover {	color: #00CCCC; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
-
-/* fadein/fadeout effect for modal popup
-/* ------------------------------------------------------------------ */
-
-/* content at start */
 .mfp-fade.mfp-wrap .mfp-content .popup-modal {
    opacity: 0;
    -webkit-transition: all 200ms ease-in-out;
@@ -576,10 +550,6 @@ ul#nav li.current a { color: #F06000; }
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
    opacity: 0;
 }
-
-/* ------------------------------------------------------------------ */
-/* f. Call To Action Section
-/* ------------------------------------------------------------------ */
 
 #call-to-action {
    background: #212121;
@@ -633,10 +603,6 @@ call-to-action .button {
 	font-family: 'opensans-semibold', sans-serif; 
 	color: #D8D8D8;
 }
-
-/* ------------------------------------------------------------------
-/* g. Testimonials
-/* ------------------------------------------------------------------ */
 
 #testimonials {
    background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
@@ -719,12 +685,11 @@ call-to-action .button {
 .flexslider .slides { zoom: 1; }
 .flexslider .slides > li { position: relative; }
 
-/* Hide the slides before the JS is loaded. Avoids image jumping */
+
 .flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
-/* Suggested container for slide animation setups. Can replace this with your own */
+
 .flex-container { zoom: 1; position: relative; }
 
-/* Clearfix for .slides */
 .slides:before,
 .slides:after {
    content: " ";
@@ -734,19 +699,15 @@ call-to-action .button {
    clear: both;
 }
 
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
 .no-js .slides > li:first-child { display: block; }
 
-/* Slider Styles */
+
 .slides { zoom: 1; }
 .slides > li {
-   /*margin-right: 5px; */
+
    overflow: hidden;
 }
 
-/* Control Nav */
 .flex-control-nav {
     width: 100%;
     position: absolute;
@@ -782,10 +743,6 @@ call-to-action .button {
     background: rgba(255, 255, 255, .9);
     cursor: default;
 }
-
-/* ------------------------------------------------------------------ */
-/* h. Contact Section
-/* ------------------------------------------------------------------ */
 
 #contact {
    background: #191919;
@@ -827,9 +784,6 @@ call-to-action .button {
    padding-right: 3%;
 }
 #contact .header-col { padding-top: 6px; }
-
-
-/* contact form */
 #contact form { margin-bottom: 30px; }
 #contact label {
    font: 15px/24px 'opensans-bold', sans-serif;
@@ -900,8 +854,6 @@ call-to-action .button {
    top: 17px;
 }
 
-
-/* Twitter Feed */
 #twitter {
    margin-top: 12px;
    padding: 0;
@@ -919,11 +871,6 @@ call-to-action .button {
    border: none;
 }
 
-
-/* ------------------------------------------------------------------ */
-/* i. Footer
-/* ------------------------------------------------------------------ */
-
 footer {
    padding-top: 48px;
    margin-bottom: 48px;
@@ -936,7 +883,6 @@ footer {
 footer a, footer a:visited { color: #525252; }
 footer a:hover, footer a:focus { color: #fff; }
 
-/* copyright */
 footer .copyright {
     margin: 0;
     padding: 0;
@@ -960,7 +906,6 @@ footer .copyright  li:first-child:before {
     display: none;
 }
 
-/* social links */
 footer .social-links {
    margin: 18px 0 30px 0;
    padding: 0;
@@ -976,7 +921,6 @@ footer .social-links li {
 
 footer .social-links li:first-child { margin-left: 0; }
 
-/* Go To Top Button */
 #go-top {
 	position: absolute;
 	top: -24px;
