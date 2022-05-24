@@ -43,7 +43,7 @@ let resumeData = {
       },
 
     ],
-    "skillsDescription":"A list of my skills",
+    "skillsDescription":"List of Skills",
     "skills":[
       {
         "skillname":"HTML5"

@@ -6,7 +6,7 @@ export default class About extends Component {
       <section id="about">
          <div className="row">
             <div className="three columns">
-               <img className="profile-pic"  src="images/profilepic.jpg" alt="" />
+               <img className="profile-pic"  src="images/profilepic.jpg" alt="Image of Trent Tkachuk" />
             </div>
             <div className="nine columns main-col">
                <h2>About Me</h2>
@@ -19,13 +19,15 @@ export default class About extends Component {
                   <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
-       						<span>{resumeData.name}</span>
+       						<h5 style={{color: "teal"}}>{resumeData.name}</h5>
                      <br></br>
        						   <span>
                      {resumeData.address}
                     </span>
                     <br></br>
-                    <span>{resumeData.website}</span>
+                    <a href={resumeData.website}>{resumeData.website}</a>
+                    <br></br>
+                    <a href={resumeData.linkedinId}>{resumeData.linkedinId}</a>
        					   </p>
                   </div>
                </div>
